@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Responsive Admin Dashboard — metrics, tables, and quick actions." />
+  <link rel="icon" href="images/user-avatar.png" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar" aria-label="Sidebar">
+    <div class="sidebar__top">
+      <div class="logo">🧭 <strong>DashPro</strong></div>
+      <nav class="side-nav" aria-label="Sidebar navigation">
+        <a class="side-link is-active" href="#">🏠 Dashboard</a>
+        <a class="side-link" href="#">📦 Orders</a>
+        <a class="side-link" href="#">👤 Users</a>
+        <a class="side-link" href="#">📈 Analytics</a>
+        <a class="side-link" href="#">⚙️ Settings</a>
+      </nav>
+    </div>
+    <div class="sidebar__bottom">
+      <div class="user">
+        <img src="images/user-avatar.png" alt="Admin avatar" />
+        <div>
+          <strong>Sagnik Admin</strong>
+          <small>sagnik@example.com</small>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <h1 class="page-title">Dashboard</h1>
+
+    <div class="search">
+      <input type="search" placeholder="Search…" aria-label="Search" />
+    </div>
+
+    <div class="header-actions">
+      <div class="dropdown">
+        <button class="btn btn--icon" aria-haspopup="true" aria-expanded="false">🔔</button>
+        <div class="menu" role="menu" aria-label="Notifications">
+          <button role="menuitem">New order received</button>
+          <button role="menuitem">Server maintenance 9PM</button>
+          <button role="menuitem">2 pending approvals</button>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn btn--icon" aria-haspopup="true" aria-expanded="false">👤</button>
+        <div class="menu" role="menu" aria-label="Profile">
+          <button role="menuitem">Profile</button>
+          <button role="menuitem">Team</button>
+          <button role="menuitem">Sign out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main" role="main">
+    <!-- Stats -->
+    <section aria-labelledby="stats-title">
+      <h2 id="stats-title" class="visually-hidden">Key Metrics</h2>
+      <div class="stats-grid">
+        <article class="card stat">
+          <div class="stat__icon">💰</div>
+          <div class="stat__value">₹12.4L</div>
+          <div class="stat__label">Revenue</div>
+          <div class="stat__delta is-up">+8.2%</div>
+        </article>
+        <article class="card stat">
+          <div class="stat__icon">🧑‍🤝‍🧑</div>
+          <div class="stat__value">8,920</div>
+          <div class="stat__label">Users</div>
+          <div class="stat__delta is-up">+2.1%</div>
+        </article>
+        <article class="card stat">
+          <div class="stat__icon">🧾</div>
+          <div class="stat__value">1,247</div>
+          <div class="stat__label">Orders</div>
+          <div class="stat__delta is-down">-1.3%</div>
+        </article>
+        <article class="card stat">
+          <div class="stat__icon">📈</div>
+          <div class="stat__value">34%</div>
+          <div class="stat__label">Growth</div>
+          <div class="stat__delta is-up">+0.7%</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tables -->
+    <section class="tables" aria-label="Data tables">
+      <div class="table-card">
+        <header class="table-card__header">
+          <h3>Recent Orders</h3>
+          <small>Sorted by date (visual only)</small>
+        </header>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="sortable">Order ID</th>
+                <th scope="col" class="sortable">Customer</th>
+                <th scope="col">Product</th>
+                <th scope="col" class="sortable">Amount</th>
+                <th scope="col">Status</th>
+                <th scope="col" class="sortable">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>#1008</td><td>Riya S.</td><td>Annual Plan</td><td>₹12,000</td><td><span class="badge badge--success">Paid</span></td><td>2025-09-12</td></tr>
+              <tr><td>#1007</td><td>Arun K.</td><td>Starter</td><td>₹1,499</td><td><span class="badge badge--warning">Pending</span></td><td>2025-09-12</td></tr>
+              <tr><td>#1006</td><td>Mina P.</td><td>Pro Add-on</td><td>₹4,999</td><td><span class="badge badge--success">Paid</span></td><td>2025-09-11</td></tr>
+              <tr><td>#1005</td><td>John D.</td><td>Pro</td><td>₹2,999</td><td><span class="badge badge--danger">Failed</span></td><td>2025-09-11</td></tr>
+              <tr><td>#1004</td><td>Sam V.</td><td>Starter</td><td>₹1,499</td><td><span class="badge badge--success">Paid</span></td><td>2025-09-10</td></tr>
+              <tr><td>#1003</td><td>Nina T.</td><td>Annual Plan</td><td>₹12,000</td><td><span class="badge badge--success">Paid</span></td><td>2025-09-09</td></tr>
+              <tr><td>#1002</td><td>Ishan C.</td><td>Starter</td><td>₹1,499</td><td><span class="badge badge--warning">Pending</span></td><td>2025-09-09</td></tr>
+              <tr><td>#1001</td><td>Priya R.</td><td>Pro</td><td>₹2,999</td><td><span class="badge badge--success">Paid</span></td><td>2025-09-08</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td colspan="6">8 rows</td></tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <div class="table-card">
+        <header class="table-card__header">
+          <h3>User Analytics</h3>
+        </header>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th colspan="4">Users by Type</th></tr>
+              <tr>
+                <th scope="col">User Type</th>
+                <th scope="col">Count</th>
+                <th scope="col">Percentage</th>
+                <th scope="col">Trend</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Free</td><td>6,100</td><td>68%</td><td>↗</td></tr>
+              <tr><td>Pro</td><td>2,500</td><td>28%</td><td>→</td></tr>
+              <tr><td>Enterprise</td><td>320</td><td>4%</td><td>↗</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td><strong>Total</strong></td><td>8,920</td><td>100%</td><td>↗</td></tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions" aria-labelledby="qa-title">
+      <h2 id="qa-title">Add New Product</h2>
+      <form class="form" action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Product Information</legend>
+          <div class="form-grid">
+            <label>Product Name
+              <input type="text" name="name" required />
+            </label>
+            <label>Category
+              <select name="category">
+                <option>Software</option>
+                <option>Hardware</option>
+                <option>Service</option>
+              </select>
+            </label>
+            <label>Price (₹)
+              <input type="number" name="price" min="0" max="1000000" step="1" />
+            </label>
+            <label>SKU/Code
+              <input type="text" name="sku" pattern="[A-Z0-9-]{4,}" placeholder="e.g., PROD-1234" />
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Inventory</legend>
+          <div class="form-grid">
+            <label>Stock Quantity
+              <input type="number" name="stock" min="0" step="1" />
+            </label>
+            <label>Reorder Level
+              <input type="number" name="reorder" min="0" step="1" />
+            </label>
+            <label>Supplier
+              <select name="supplier">
+                <option>Acme Supplies</option>
+                <option>Globex</option>
+                <option>Umbrella Corp</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Media</legend>
+          <div class="form-grid">
+            <label>Product Image
+              <input type="file" name="image" accept="image/*" />
+            </label>
+
+            <label class="stack">
+              <input type="checkbox" name="featured" />
+              Featured Product
+            </label>
+
+            <fieldset class="fieldset-inline">
+              <legend>Status</legend>
+              <label><input type="radio" name="active" value="true" /> Active</label>
+              <label><input type="radio" name="active" value="false" /> Inactive</label>
+            </fieldset>
+          </div>
+        </fieldset>
+
+        <div class="btn-group">
+          <button class="btn btn--primary" type="submit">Save</button>
+          <button class="btn" type="submit">Save &amp; Continue</button>
+          <button class="btn btn--ghost" type="button">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <button class="fab" aria-label="Create new">＋</button>
+  </main>
+</body>
+</html>
