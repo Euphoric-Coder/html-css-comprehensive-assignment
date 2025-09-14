@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="InnovateTech Solutions — modern technology services for web, mobile, and consulting."
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>InnovateTech Solutions — Build the Future</title>
+    <link rel="preload" href="images/hero-image.jpg" as="image" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="page-layout">
+    <header class="site-header" role="banner" aria-label="Site header">
+      <div class="header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="InnovateTech Solutions home"
+        >
+          <img
+            src="images/logo.png"
+            alt="InnovateTech Solutions logo"
+            class="brand__logo"
+          />
+          <span class="brand__name"
+            >InnovateTech <strong>Solutions</strong></span
+          >
+        </a>
+
+        <!-- Mobile nav toggle (CSS only) -->
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Open navigation"
+        />
+        <label for="nav-toggle" class="hamburger" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="site-nav" role="navigation" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html" class="is-active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+          <a class="btn btn--primary header-cta" href="#get-started"
+            >Get Started</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <h1 id="hero-title">Build bold products with a partner you trust.</h1>
+          <p class="hero__subtitle">
+            Web, mobile, and AI solutions engineered for speed, scale, and
+            accessibility.
+          </p>
+          <div class="hero__actions">
+            <a href="#services" class="btn btn--primary">Explore Services</a>
+            <a href="contact.html" class="btn btn--ghost">Request a Quote</a>
+          </div>
+        </div>
+        <figure class="hero__media">
+          <img
+            src="https://picsum.photos/800/500?random=1"
+            alt="Developers collaborating in a modern workspace"
+          />
+        </figure>
+      </section>
+
+      <!-- Services -->
+      <section
+        id="services"
+        class="section services"
+        aria-labelledby="services-title"
+      >
+        <div class="section__header">
+          <h2 id="services-title">Our Services</h2>
+          <p>Everything you need to launch and grow modern digital products.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="card service-card">
+            <img
+              class="card__icon"
+              src="https://picsum.photos/40?random=2"
+              alt="Random Images"
+            />
+            <h3>Web Development</h3>
+            <p>
+              Accessible, performant, SEO-friendly websites using modern stacks.
+            </p>
+            <a class="card__link" href="about.html#mission">Learn More →</a>
+          </article>
+
+          <article class="card service-card">
+            <img
+              class="card__icon"
+              src="https://picsum.photos/40?random=3"
+              alt="Random Images"
+            />
+            <h3>Mobile Apps</h3>
+            <p>
+              Fast, intuitive apps for iOS and Android with offline-first UX.
+            </p>
+            <a class="card__link" href="about.html#vision">Learn More →</a>
+          </article>
+
+          <article class="card service-card">
+            <img class="card__icon" src="https://picsum.photos/45?random=3" alt="Random Images" />
+            <h3>Consulting</h3>
+            <p>
+              Architecture reviews, audits, and roadmaps to accelerate delivery.
+            </p>
+            <a class="card__link" href="contact.html">Learn More →</a>
+          </article>
+
+          <article class="card service-card">
+            <img class="card__icon" src="https://picsum.photos/50?random=3" alt="Random Images" />
+            <h3>AI & Automation</h3>
+            <p>
+              Practical ML/AI integrations, data pipelines, and workflow
+              automation.
+            </p>
+            <a class="card__link" href="contact.html#contact-form"
+              >Learn More →</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <!-- About preview -->
+      <section class="section about-preview" aria-labelledby="about-title">
+        <div class="section__header">
+          <h2 id="about-title">About InnovateTech</h2>
+        </div>
+
+        <article class="about-preview__grid">
+          <div class="about-preview__text">
+            <p>
+              We help teams ship reliable software faster with a strong focus on
+              accessibility, performance, and maintainability.
+            </p>
+            <p>
+              From startups to enterprises, our approach combines modern
+              engineering with thoughtful design and inclusive user experiences.
+            </p>
+
+            <section
+              id="mission"
+              aria-labelledby="mission-title"
+              class="subsection"
+            >
+              <h3 id="mission-title">Our Mission</h3>
+              <p>
+                Empower organizations to build impactful, ethical technology
+                that improves everyday life.
+              </p>
+            </section>
+
+            <section
+              id="vision"
+              aria-labelledby="vision-title"
+              class="subsection"
+            >
+              <h3 id="vision-title">Our Vision</h3>
+              <p>
+                A world where software is sustainable, accessible to everyone,
+                and delightful to use.
+              </p>
+            </section>
+          </div>
+
+          <aside class="about-preview__stats" aria-label="Company statistics">
+            <dl class="stats">
+              <div>
+                <dt>Projects Delivered</dt>
+                <dd>120+</dd>
+              </div>
+              <div>
+                <dt>Average Lighthouse Perf</dt>
+                <dd>95+</dd>
+              </div>
+              <div>
+                <dt>Clients Worldwide</dt>
+                <dd>40+</dd>
+              </div>
+              <div>
+                <dt>Uptime SLA</dt>
+                <dd>99.9%</dd>
+              </div>
+            </dl>
+          </aside>
+        </article>
+      </section>
+
+      <section id="get-started" class="cta-block" aria-labelledby="cta-title">
+        <h2 id="cta-title">Ready to build?</h2>
+        <p>
+          Tell us about your project and timelines. We’ll respond within one
+          business day.
+        </p>
+        <a class="btn btn--primary" href="contact.html">Contact Us</a>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer__grid">
+        <section aria-labelledby="footer-contact">
+          <h3 id="footer-contact">Contact</h3>
+          <address>
+            221B Innovation Ave, Suite 42<br />
+            Bengaluru, IN 560001
+          </address>
+          <p>
+            <a href="tel:+910000000000">+91 00000 00000</a><br />
+            <a href="mailto:hello@innovatetech.example"
+              >hello@innovatetech.example</a
+            >
+          </p>
+        </section>
+
+        <section aria-labelledby="footer-social">
+          <h3 id="footer-social">Social</h3>
+          <ul class="social-list">
+            <li><a href="#" aria-label="Follow on LinkedIn">LinkedIn</a></li>
+            <li><a href="#" aria-label="Follow on Twitter">Twitter</a></li>
+            <li><a href="#" aria-label="Follow on GitHub">GitHub</a></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="footer-legal">
+          <h3 id="footer-legal">Legal</h3>
+          <p>
+            &copy; <span id="year"></span> InnovateTech Solutions &mdash; All
+            rights reserved.
+          </p>
+        </section>
+      </div>
+    </footer>
+
+    <script>
+      // Year (progressive enhancement; not required)
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

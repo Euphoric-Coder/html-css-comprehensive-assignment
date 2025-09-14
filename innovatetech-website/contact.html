@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Contact InnovateTech Solutions — address, office hours, and project inquiry form."
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>Contact — InnovateTech Solutions</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="page-layout">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img
+            src="https://picsum.photos/40?random=6"
+            alt="InnovateTech Solutions logo"
+            class="brand__logo"
+          />
+          <span class="brand__name"
+            >InnovateTech <strong>Solutions</strong></span
+          >
+        </a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"
+          ><span></span><span></span><span></span
+        ></label>
+
+        <nav class="site-nav" role="navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="is-active" href="contact.html">Contact</a></li>
+            <li><a href="index.html#services">Services</a></li>
+          </ul>
+          <a class="btn btn--primary header-cta" href="#contact-form"
+            >Get Started</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+      <header class="page-header">
+        <h1>Contact Us</h1>
+        <p>We’ll review your inquiry and reply within one business day.</p>
+      </header>
+
+      <section class="section contact-info" aria-labelledby="info-title">
+        <h2 id="info-title">Information</h2>
+        <address>
+          221B Innovation Ave, Suite 42, Bengaluru, IN 560001<br />
+          <a href="tel:+910000000000">+91 00000 00000</a> &middot;
+          <a href="mailto:hello@innovatetech.example"
+            >hello@innovatetech.example</a
+          >
+        </address>
+
+        <div class="table-wrap" role="region" aria-label="Office hours">
+          <table class="table">
+            <caption>
+              Office Hours
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Open</th>
+                <th scope="col">Close</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Mon–Fri</th>
+                <td>09:00</td>
+                <td>18:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Saturday</th>
+                <td>10:00</td>
+                <td>14:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Sunday</th>
+                <td colspan="2">Closed</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">All times IST</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="form-title" id="contact-form">
+        <h2 id="form-title">Project Inquiry</h2>
+
+        <form class="form" action="#" method="post" novalidate>
+          <!-- Personal Information -->
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-grid">
+              <label
+                >Full Name
+                <input
+                  name="fullName"
+                  type="text"
+                  required
+                  autocomplete="name"
+                />
+              </label>
+
+              <label
+                >Email
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                />
+              </label>
+
+              <label
+                >Phone Number
+                <input
+                  name="phone"
+                  type="tel"
+                  inputmode="tel"
+                  autocomplete="tel"
+                />
+              </label>
+
+              <label
+                >Company / Organization
+                <input name="company" type="text" autocomplete="organization" />
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Inquiry Details -->
+          <fieldset>
+            <legend>Inquiry Details</legend>
+            <div class="form-grid">
+              <label
+                >Service Interest
+                <select name="service">
+                  <option>Web Development</option>
+                  <option>Mobile Apps</option>
+                  <option>Consulting</option>
+                  <option>Other</option>
+                </select>
+              </label>
+
+              <fieldset class="fieldset-inline">
+                <legend>Project Timeline</legend>
+                <label
+                  ><input type="radio" name="timeline" value="asap" />
+                  ASAP</label
+                >
+                <label
+                  ><input type="radio" name="timeline" value="1-3" /> 1–3
+                  months</label
+                >
+                <label
+                  ><input type="radio" name="timeline" value="3-6" /> 3–6
+                  months</label
+                >
+                <label
+                  ><input type="radio" name="timeline" value="6+" /> 6+
+                  months</label
+                >
+              </fieldset>
+
+              <label class="range-wrap"
+                >Budget Range (₹)
+                <input
+                  type="range"
+                  name="budget"
+                  min="50000"
+                  max="1000000"
+                  step="50000"
+                  value="250000"
+                />
+                <div class="range-labels">
+                  <span>₹50k</span><span>₹5L</span><span>₹10L</span>
+                </div>
+              </label>
+
+              <fieldset class="fieldset-inline">
+                <legend>Project Type</legend>
+                <label
+                  ><input type="checkbox" name="type[]" value="new-site" /> New
+                  Website</label
+                >
+                <label
+                  ><input type="checkbox" name="type[]" value="redesign" />
+                  Redesign</label
+                >
+                <label
+                  ><input type="checkbox" name="type[]" value="mobile-app" />
+                  Mobile App</label
+                >
+                <label
+                  ><input type="checkbox" name="type[]" value="ecommerce" />
+                  E-commerce</label
+                >
+                <label
+                  ><input type="checkbox" name="type[]" value="other" />
+                  Other</label
+                >
+              </fieldset>
+            </div>
+          </fieldset>
+
+          <!-- Message -->
+          <fieldset>
+            <legend>Message</legend>
+            <label class="stack"
+              >Project Description
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+
+            <label class="stack"
+              >Requirements (Doc only)
+              <input
+                type="file"
+                name="requirements"
+                accept=".pdf,.doc,.docx,.txt"
+              />
+            </label>
+
+            <fieldset class="fieldset-inline">
+              <legend>Preferred Contact Method</legend>
+              <label
+                ><input type="radio" name="contactMethod" value="email" />
+                Email</label
+              >
+              <label
+                ><input type="radio" name="contactMethod" value="phone" />
+                Phone</label
+              >
+              <label
+                ><input type="radio" name="contactMethod" value="video" /> Video
+                Call</label
+              >
+            </fieldset>
+          </fieldset>
+
+          <!-- Terms -->
+          <fieldset>
+            <legend>Terms</legend>
+            <label class="stack">
+              <input type="checkbox" name="tos" required />
+              I agree to the
+              <a href="#" aria-label="Terms of Service">Terms of Service</a> and
+              <a href="#" aria-label="Privacy Policy">Privacy Policy</a>.
+            </label>
+            <label class="stack">
+              <input type="checkbox" name="newsletter" />
+              Subscribe to our newsletter
+            </label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="btn btn--primary" type="submit">Submit</button>
+            <button class="btn btn--ghost" type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__grid">
+        <section>
+          <h3>Contact</h3>
+          <address>221B Innovation Ave, Suite 42, Bengaluru, IN 560001</address>
+          <p>
+            <a href="tel:+910000000000">+91 00000 00000</a><br /><a
+              href="mailto:hello@innovatetech.example"
+              >hello@innovatetech.example</a
+            >
+          </p>
+        </section>
+        <section>
+          <h3>Social</h3>
+          <ul class="social-list">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Legal</h3>
+          <p>
+            &copy; <span id="year"></span> InnovateTech Solutions &mdash; All
+            rights reserved.
+          </p>
+        </section>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

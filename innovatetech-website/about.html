@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About InnovateTech Solutions — mission, history, team, and values." />
+  <link rel="icon" href="images/favicon.ico" />
+  <title>About — InnovateTech Solutions</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-layout">
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="InnovateTech Solutions logo" class="brand__logo" />
+        <span class="brand__name">InnovateTech <strong>Solutions</strong></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+
+      <nav class="site-nav" role="navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="is-active" href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#services">Services</a></li>
+        </ul>
+        <a class="btn btn--primary header-cta" href="contact.html">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <header class="page-header">
+      <h1>Our Story</h1>
+      <p>From a small studio to a global team delivering premium software.</p>
+    </header>
+
+    <section class="section history" aria-labelledby="history-title">
+      <h2 id="history-title">Company History</h2>
+      <ol class="timeline">
+        <li>
+          <h3>2018 — Founded</h3>
+          <p>Launched with a mission to build accessible, high-performance products.</p>
+        </li>
+        <li>
+          <h3>2020 — First 50 projects</h3>
+          <p>Scaled core engineering practices and formalized accessibility audits.</p>
+        </li>
+        <li>
+          <h3>2023 — Global clients</h3>
+          <p>Delivered cross-platform apps for customers in 10+ countries.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section team" aria-labelledby="team-title">
+      <h2 id="team-title">Meet the Team</h2>
+
+      <div class="team__grid">
+        <article class="card team-card" itemscope itemtype="https://schema.org/Person">
+          <img src="images/person3.jpeg" alt="Photo of Asha Verma" width="300px" />
+          <div class="team-card__body">
+            <h3 itemprop="name">Asha Verma</h3>
+            <p class="role" itemprop="jobTitle">Principal Engineer</p>
+            <p>Performance specialist and advocate for inclusive design.</p>
+          </div>
+        </article>
+
+        <article class="card team-card" itemscope itemtype="https://schema.org/Person">
+          <img src="images/person1.jpg" alt="Photo of Rohan Mehta" width="300px" />
+          <div class="team-card__body">
+            <h3 itemprop="name">Rohan Mehta</h3>
+            <p class="role" itemprop="jobTitle">Product Designer</p>
+            <p>Design systems, prototyping, and UX research lead.</p>
+          </div>
+        </article>
+
+        <article class="card team-card" itemscope itemtype="https://schema.org/Person">
+          <img src="images/person4.webp" alt="Photo of Nisha Patel" width="300px" />
+          <div class="team-card__body">
+            <h3 itemprop="name">Nisha Patel</h3>
+            <p class="role" itemprop="jobTitle">Mobile Lead</p>
+            <p>Offline-first apps and pixel-perfect experiences.</p>
+          </div>
+        </article>
+
+        <article class="card team-card" itemscope itemtype="https://schema.org/Person">
+          <img src="images/person2.webp" alt="Photo of Arjun Rao" width="300px" />
+          <div class="team-card__body">
+            <h3 itemprop="name">Arjun Rao</h3>
+            <p class="role" itemprop="jobTitle">Solutions Architect</p>
+            <p>Cloud-native architecture, security, and reliability.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section values" aria-labelledby="values-title">
+      <h2 id="values-title">Our Values</h2>
+      <ul class="values__list">
+        <li>
+          <span aria-hidden="true">♿</span>
+          <strong>Accessibility</strong> — Build for everyone from day one.
+        </li>
+        <li>
+          <span aria-hidden="true">⚡</span>
+          <strong>Performance</strong> — Fast by default, measured and proven.
+        </li>
+        <li>
+          <span aria-hidden="true">🔒</span>
+          <strong>Security</strong> — Privacy-respecting and least privilege.
+        </li>
+        <li>
+          <span aria-hidden="true">🤝</span>
+          <strong>Partnership</strong> — Transparent process and shared outcomes.
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__grid">
+      <section>
+        <h3>Contact</h3>
+        <address>221B Innovation Ave, Suite 42, Bengaluru, IN 560001</address>
+        <p><a href="tel:+910000000000">+91 00000 00000</a><br><a href="mailto:hello@innovatetech.example">hello@innovatetech.example</a></p>
+      </section>
+      <section>
+        <h3>Social</h3>
+        <ul class="social-list">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Legal</h3>
+        <p>&copy; <span id="year"></span> InnovateTech Solutions &mdash; All rights reserved.</p>
+      </section>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
